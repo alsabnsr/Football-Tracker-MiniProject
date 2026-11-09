@@ -6,6 +6,7 @@ kalah = 0
 
 TotalGol = 0
 TotalKebobolan = 0
+GoalDif = 0
 
 TotalPoin = 0
 
@@ -34,6 +35,8 @@ else:
 
         TotalGol = TotalGol + SkorKita
         TotalKebobolan = TotalKebobolan + SkorLawan
+        
+    GoalDif = TotalGol - TotalKebobolan
 
     RataRataGol = TotalGol / JumlahMatch
     RataRataKebobolan = TotalKebobolan / JumlahMatch
@@ -44,6 +47,7 @@ else:
     print("Total Poin: ", TotalPoin)
     print("Total Gol:", TotalGol)
     print("Total Kebobolan:", TotalKebobolan)
+    print("Goal Difference: ", GoalDif)
     print("Rata-rata Gol:", RataRataGol)
     print("Rata-rata Kebobolan:", RataRataKebobolan)
     print("Skor Kita: ", ListSkorKita)
