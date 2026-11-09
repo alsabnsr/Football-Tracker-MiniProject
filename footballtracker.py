@@ -7,6 +7,8 @@ kalah = 0
 TotalGol = 0
 TotalKebobolan = 0
 
+TotalPoin = 0
+
 ListSkorKita = []
 ListSkorLawan = []
 
@@ -22,10 +24,13 @@ else:
 
         if SkorKita > SkorLawan:
             menang = menang + 1
+            TotalPoin = TotalPoin + 3
         elif SkorKita == SkorLawan:
             seri = seri + 1
+            TotalPoin = TotalPoin + 1
         else:
             kalah = kalah + 1
+            TotalPoin = TotalPoin + 0
 
         TotalGol = TotalGol + SkorKita
         TotalKebobolan = TotalKebobolan + SkorLawan
@@ -36,6 +41,7 @@ else:
     print("Menang:", menang)
     print("Seri:", seri)
     print("Kalah:", kalah)
+    print("Total Poin: ", TotalPoin)
     print("Total Gol:", TotalGol)
     print("Total Kebobolan:", TotalKebobolan)
     print("Rata-rata Gol:", RataRataGol)
