@@ -4,6 +4,9 @@ menang = 0
 seri = 0
 kalah = 0
 
+TotalGol = 0
+TotalKebobolan = 0
+
 for i in range(JumlahMatch):
     SkorKita = int(input("Skor tim kita: "))
     SkorLawan = int(input("Skor tim lawan: "))
@@ -15,6 +18,11 @@ for i in range(JumlahMatch):
     else:
         kalah = kalah + 1
 
+    TotalGol = TotalGol + SkorKita
+    TotalKebobolan = TotalKebobolan + SkorLawan
+
 print("Menang:", menang)
 print("Seri:", seri)
 print("Kalah:", kalah)
+print("Total Gol:", TotalGol)
+print("Total Kebobolan:", TotalKebobolan)
