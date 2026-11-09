@@ -42,3 +42,7 @@ else:
     print("Rata-rata Kebobolan:", RataRataKebobolan)
     print("Skor Kita: ", ListSkorKita)
     print("Skor Lawan: ", ListSkorLawan)
+
+    print("===Riwayat Pertandingan===")
+    for i in range(JumlahMatch):
+        print("Match ke-",i+1,":", ListSkorKita[i], "-", ListSkorLawan[i])
