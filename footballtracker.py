@@ -21,8 +21,13 @@ for i in range(JumlahMatch):
     TotalGol = TotalGol + SkorKita
     TotalKebobolan = TotalKebobolan + SkorLawan
 
+RataRataGol = TotalGol / JumlahMatch
+RataRataKebobolan = TotalKebobolan / JumlahMatch
+
 print("Menang:", menang)
 print("Seri:", seri)
 print("Kalah:", kalah)
 print("Total Gol:", TotalGol)
 print("Total Kebobolan:", TotalKebobolan)
+print("Rata-rata Gol:", RataRataGol)
+print("Rata-rata Kebobolan:", RataRataKebobolan)
