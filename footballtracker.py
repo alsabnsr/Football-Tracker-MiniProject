@@ -7,12 +7,18 @@ kalah = 0
 TotalGol = 0
 TotalKebobolan = 0
 
+ListSkorKita = []
+ListSkorLawan = []
+
 if JumlahMatch <= 0:
     print("Tidak Ada Match")
 else:
     for i in range(JumlahMatch):
         SkorKita = int(input("Skor tim kita: "))
         SkorLawan = int(input("Skor tim lawan: "))
+
+        ListSkorKita.append(SkorKita)
+        ListSkorLawan.append(SkorLawan)
 
         if SkorKita > SkorLawan:
             menang = menang + 1
@@ -34,3 +40,5 @@ else:
     print("Total Kebobolan:", TotalKebobolan)
     print("Rata-rata Gol:", RataRataGol)
     print("Rata-rata Kebobolan:", RataRataKebobolan)
+    print("Skor Kita: ", ListSkorKita)
+    print("Skor Lawan: ", ListSkorLawan)
